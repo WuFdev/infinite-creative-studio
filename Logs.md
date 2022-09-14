@@ -1,2 +1,2 @@
 ## version 1.0.1
-added new update info
+added new about info info
