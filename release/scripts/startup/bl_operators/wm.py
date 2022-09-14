@@ -3037,7 +3037,7 @@ class WM_MT_splash_quick_setup(Menu):
         sub = col.column(heading="Theme")
         label = bpy.types.USERPREF_MT_interface_theme_presets.bl_label
         if label == "Presets":
-            label = "Blender Dark"
+            label = "Dark theme"
         sub.menu("USERPREF_MT_interface_theme_presets", text=label)
 
         # Keep height constant.
@@ -3134,8 +3134,8 @@ class WM_MT_splash_about(Menu):
         col.label(text=iface_("Hash: %s") % bpy.app.build_hash.decode('ascii'), translate=False)
         col.label(text=iface_("Branch: %s") % bpy.app.build_branch.decode('utf-8', 'replace'), translate=False)
         col.separator(factor=2.0)
-        col.label(text="Blender is free software")
-        col.label(text="Licensed under the GNU General Public License")
+        col.label(text="Infinite creative studio is a free software based on blender")
+        col.label(text="Not licensed under the GNU General Public License. wait really i dont know to be honest.")
 
         col = split.column(align=True)
         col.emboss = 'PULLDOWN_MENU'
